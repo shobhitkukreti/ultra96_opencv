@@ -1,0 +1,1093 @@
+
+*** Running vivado
+    with args -log design_1_cv_hw_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cv_hw_0_0.tcl
+
+
+****** Vivado v2018.2.2 (64-bit)
+  **** SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+  **** IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_cv_hw_0_0.tcl -notrace
+Command: synth_design -top design_1_cv_hw_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 461 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1346.340 ; gain = 79.871 ; free physical = 18824 ; free virtual = 23738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cv_hw_0_0' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ip/design_1_cv_hw_0_0/synth/design_1_cv_hw_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 23'b00000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 23'b00000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 23'b00000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 23'b00000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 23'b00000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 23'b00000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 23'b00000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 23'b00000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 23'b00000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 23'b00000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 23'b00000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 23'b00000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 23'b00000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 23'b00000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 23'b00000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 23'b00000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 23'b00000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 23'b00000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 23'b00001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 23'b00010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 23'b00100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 23'b01000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 23'b10000000000000000000000 
+	Parameter C_S_AXI_CTRL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:126]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_CTRL_BUS_s_axi' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_CTRL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_ROWS_CTRL bound to: 6'b010100 
+	Parameter ADDR_COLS_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_COLS_CTRL bound to: 6'b011100 
+	Parameter ADDR_FLAG_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_FLAG_CTRL bound to: 6'b100100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_CTRL_BUS_s_axi.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_CTRL_BUS_s_axi' (1#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_CTRL_BUS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_dadd_64ns_6bkb' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_dadd_64ns_6bkb.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cv_hw_ap_dadd_3_full_dsp_64' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dadd_3_full_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at '/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dadd_3_full_dsp_64.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'cv_hw_ap_dadd_3_full_dsp_64' (28#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dadd_3_full_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_dadd_64ns_6bkb' (29#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_dadd_64ns_6bkb.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_dmul_64ns_6cud' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_dmul_64ns_6cud.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cv_hw_ap_dmul_3_max_dsp_64' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dmul_3_max_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at '/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dmul_3_max_dsp_64.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'cv_hw_ap_dmul_3_max_dsp_64' (36#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_dmul_3_max_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_dmul_64ns_6cud' (37#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_dmul_64ns_6cud.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_sitodp_32nsdEe' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_sitodp_32nsdEe.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cv_hw_ap_sitodp_2_no_dsp_32' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_sitodp_2_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at '/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_sitodp_2_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'cv_hw_ap_sitodp_2_no_dsp_32' (40#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/ip/cv_hw_ap_sitodp_2_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_sitodp_32nsdEe' (41#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_sitodp_32nsdEe.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_mul_mul_16neOg' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_mul_mul_16neOg.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cv_hw_mul_mul_16neOg_DSP48_0' [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_mul_mul_16neOg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_mul_mul_16neOg_DSP48_0' (42#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_mul_mul_16neOg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw_mul_mul_16neOg' (43#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw_mul_mul_16neOg.v:14]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:1993]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:1999]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_stream_V_data_V_0_data_out_reg' and it is trimmed from '32' to '24' bits. [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'cv_hw' (44#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cv_hw_0_0' (45#1) [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ip/design_1_cv_hw_0_0/synth/design_1_cv_hw_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized98 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized98 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized98 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized98 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized98 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized12 has unconnected port B[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized67 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized67 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized67 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized67 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized67 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized106 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized106 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized106 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized106 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized106 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port B[26]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized104 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized104 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized104 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized104 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized104 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized63 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized63 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized63 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized63 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized63 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized59 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized59 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized59 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized59 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized59 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.965 ; gain = 196.496 ; free physical = 18416 ; free virtual = 23339
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.965 ; gain = 196.496 ; free physical = 18411 ; free virtual = 23334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.965 ; gain = 196.496 ; free physical = 18411 ; free virtual = 23334
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 862 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ip/design_1_cv_hw_0_0/constraints/cv_hw_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ip/design_1_cv_hw_0_0/constraints/cv_hw_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.runs/design_1_cv_hw_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.runs/design_1_cv_hw_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 25 instances
+  FDE => FDRE: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2337.848 ; gain = 0.000 ; free physical = 16804 ; free virtual = 21727
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 2337.848 ; gain = 1071.379 ; free physical = 17326 ; free virtual = 22249
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 2337.848 ; gain = 1071.379 ; free physical = 17326 ; free virtual = 22249
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.runs/design_1_cv_hw_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 2337.848 ; gain = 1071.379 ; free physical = 17327 ; free virtual = 22251
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cv_hw_CTRL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cv_hw_CTRL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_stream_V_data_V_0_payload_B_reg' and it is trimmed from '32' to '24' bits. [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:1091]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_stream_V_data_V_0_payload_A_reg' and it is trimmed from '32' to '24' bits. [/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.srcs/sources_1/bd/design_1/ipshared/f112/hdl/verilog/cv_hw.v:1085]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_2_fu_211_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_8_fu_217_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cv_hw_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cv_hw_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 2337.848 ; gain = 1071.379 ; free physical = 17266 ; free virtual = 22196
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/YES_DIST_1.DIST_1_PREADD_DEL' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/YES_DIST_1.DIST_1_ADD_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_DEL' (delay__parameterized7) to 'inst/cv_hw_dadd_64ns_6bkb_U1/cv_hw_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized1) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_DEL' (delay__parameterized7) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized50) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized50) to 'cv_hw_dmul_64ns_6cud:/cv_hw_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized7) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized50) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized50) to 'cv_hw_sitodp_32nsdEe:/cv_hw_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_2_fu_211_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_8_fu_217_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[30]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[29]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[28]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[27]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[26]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[25]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[24]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[23]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[22]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[21]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[20]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[19]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[18]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[17]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[16]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[15]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[14]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[13]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[12]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[11]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[10]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[9]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[8]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_sitodp_32nsdEe_U5/din0_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[30]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[29]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[28]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[27]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[26]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[25]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[24]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[23]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[22]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[21]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[20]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[19]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[18]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[17]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[16]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[15]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[14]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[13]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[12]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[11]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[10]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[9]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[8]' (FDE) to 'inst/cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_sitodp_32nsdEe_U4/din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[1]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[3]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[4]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[11]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[8]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[9]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[10]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[18]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[12] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[13]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[14]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[33] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[18]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[19]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[20]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[21]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[23]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[24]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[27] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[28]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[29]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[30]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[31]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[38]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[32] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[33]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[40]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[52] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[53] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[37] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[39] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[44] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[45] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[48] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[50] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[52] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[53]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[54]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[40]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[57] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[34]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[38]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[35] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[36] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[37] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[38]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[39]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[40]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[41]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[44]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[42] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[43]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[44]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[47] )
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[48]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[50]' (FDE) to 'inst/cv_hw_dmul_64ns_6cud_U2/din1_buf1_reg[51]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/din1_buf1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U3/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dmul_64ns_6cud_U2/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\cv_hw_dadd_64ns_6bkb_U1/ce_r_reg )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[16]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[17]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[18]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[19]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[20]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[21]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[22]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[23]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[24]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[25]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[26]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[27]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[28]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[29]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[30]' (FDE) to 'inst/cv_hw_CTRL_BUS_s_axi_U/rdata_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (cv_hw_CTRL_BUS_s_axi_U/rdata_reg[31]) is unused and will be removed from module cv_hw.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/ce_r_reg) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[63]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[62]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[61]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[60]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[59]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[58]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[57]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[56]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[55]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[54]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[53]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[52]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[51]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[50]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[49]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[48]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[47]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[46]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[45]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[44]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[43]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[42]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[41]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[40]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[39]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[38]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[37]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[36]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[35]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[34]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[33]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[32]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[31]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[30]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[29]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[28]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[27]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[26]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[25]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[24]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[23]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[22]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[21]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[20]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[19]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[18]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[17]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[16]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[15]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[14]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[13]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[12]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[11]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[10]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[9]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[8]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[7]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[6]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[5]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[4]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[3]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[2]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[1]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dadd_64ns_6bkb_U1/dout_r_reg[0]) is unused and will be removed from module cv_hw.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/ce_r_reg) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[63]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[62]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[61]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[60]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[59]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[58]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[57]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[56]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[55]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[54]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[53]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[52]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[51]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[50]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[49]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[48]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[47]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[46]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[45]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[44]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[43]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[42]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[41]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[40]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[39]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[38]) is unused and will be removed from module cv_hw.
+WARNING: [Synth 8-3332] Sequential element (cv_hw_dmul_64ns_6cud_U2/dout_r_reg[37]) is unused and will be removed from module cv_hw.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 2337.848 ; gain = 1071.379 ; free physical = 17226 ; free virtual = 22188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:37 . Memory (MB): peak = 2543.684 ; gain = 1277.215 ; free physical = 15830 ; free virtual = 20795
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:37 . Memory (MB): peak = 2567.715 ; gain = 1301.246 ; free physical = 15768 ; free virtual = 20734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:39 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15702 ; free virtual = 20667
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:39 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15770 ; free virtual = 20735
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:39 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15769 ; free virtual = 20734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15769 ; free virtual = 20734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15768 ; free virtual = 20734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15766 ; free virtual = 20732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15766 ; free virtual = 20732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |     8|
+|2     |DSP48E1         |    25|
+|3     |DSP_ALU         |     1|
+|4     |DSP_A_B_DATA    |     1|
+|5     |DSP_C_DATA      |     1|
+|6     |DSP_MULTIPLIER  |     1|
+|7     |DSP_M_DATA      |     1|
+|8     |DSP_OUTPUT      |     1|
+|9     |DSP_PREADD      |     1|
+|10    |DSP_PREADD_DATA |     1|
+|11    |LUT1            |    36|
+|12    |LUT2            |   155|
+|13    |LUT3            |   662|
+|14    |LUT4            |   238|
+|15    |LUT5            |   241|
+|16    |LUT6            |   693|
+|17    |MUXCY           |   453|
+|18    |MUXF7           |    30|
+|19    |MUXF8           |     1|
+|20    |SRL16E          |     2|
+|21    |XORCY           |   304|
+|22    |FDE             |     5|
+|23    |FDRE            |  1839|
+|24    |FDSE            |     3|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.723 ; gain = 1309.254 ; free physical = 15766 ; free virtual = 20732
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 618 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:16 . Memory (MB): peak = 2575.723 ; gain = 434.371 ; free physical = 15805 ; free virtual = 20771
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:40 . Memory (MB): peak = 2575.730 ; gain = 1309.254 ; free physical = 15805 ; free virtual = 20771
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 827 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  (CARRY4) => CARRY8: 97 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 25 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 1 instances
+  FDE => FDRE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+341 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:42 . Memory (MB): peak = 2618.738 ; gain = 1363.852 ; free physical = 15760 ; free virtual = 20727
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/shwetashob/workspace/hls/xilinx-vivado/ultra96_opencv.runs/design_1_cv_hw_0_0_synth_1/design_1_cv_hw_0_0.dcp' has been generated.

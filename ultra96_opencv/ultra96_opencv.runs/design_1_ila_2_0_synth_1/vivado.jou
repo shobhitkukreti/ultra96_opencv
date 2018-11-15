@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 30 09:42:52 2018
+# Process ID: 5998
+# Current directory: /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.runs/design_1_ila_2_0_synth_1
+# Command line: vivado -log design_1_ila_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ila_2_0.tcl
+# Log file: /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.runs/design_1_ila_2_0_synth_1/design_1_ila_2_0.vds
+# Journal file: /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.runs/design_1_ila_2_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_ila_2_0.tcl -notrace

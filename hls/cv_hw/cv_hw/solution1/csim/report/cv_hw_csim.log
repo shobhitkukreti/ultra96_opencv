@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../cv_hw_tb.cpp in debug mode
+   Compiling ../../../../cv_hw.cpp in debug mode
+   Generating csim.exe
+480 x 640 x 3
+Calling cv_hw
+Rx Starting Stream Packet
+Count 307199
+Returned from cv_hw
+WARNING: Hls::stream 'hls::stream<ap_axiu<32, 1, 1, 1> >.2' is read while empty, which may result in RTL simulation hanging.
+ RX Cnt 307200
+WARNING: Hls::stream 'hls::stream<ap_axiu<32, 1, 1, 1> >.1' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

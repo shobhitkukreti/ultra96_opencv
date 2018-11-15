@@ -1,0 +1,4 @@
+Running: xsim.dir/cv_hw/xsimk -simmode gui -wdb cv_hw.wdb -simrunnum 0 -socket 47020
+Design successfully loaded
+Design Loading Memory Usage: 52304 KB (Peak: 52304 KB)
+Design Loading CPU Usage: 20 ms

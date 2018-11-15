@@ -1,0 +1,6 @@
+cv_hw_dadd_64ns_6bkb
+cv_hw_dmul_64ns_6cud
+cv_hw_sitodp_32nsdEe
+cv_hw_mul_mul_16neOg
+cv_hw_CTRL_BUS_s_axi
+cv_hw

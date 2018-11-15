@@ -1,0 +1,33 @@
+09:18:59 **** Build of configuration Debug for project Xcv_hw_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../hw_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:111:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/helloworld.c: In function 'CheckData':
+../src/helloworld.c:353:6: warning: variable 'Value' set but not used [-Wunused-but-set-variable]
+  u32 Value;
+      ^~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../hw_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Xcv_hw_test.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hw_bsp/psu_cortexa53_0/lib -o "Xcv_hw_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Xcv_hw_test.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size Xcv_hw_test.elf  |tee "Xcv_hw_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48436	   4528	  23648	  76612	  12b44	Xcv_hw_test.elf
+Finished building: Xcv_hw_test.elf.size
+ 
+
+09:18:59 Build Finished (took 680ms)
+

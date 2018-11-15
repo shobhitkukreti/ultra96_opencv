@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Fri Oct 26 04:30:28 UTC 2018
+VLNV: xilinx.com:hls:cv_hw:1.0
+SynthRuntime: 82

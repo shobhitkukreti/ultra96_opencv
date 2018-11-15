@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 30 08:42:49 2018
+# Process ID: 6599
+# Current directory: /home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog/xsim.dir/cv_hw/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog/webtalk.log
+# Journal file: /home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog/xsim.dir/cv_hw/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/t-1000/workspace/xilinx/hls/cv_hw/cv_hw/solution1/sim/verilog/xsim.dir/cv_hw/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 30 08:42:50 2018. For additional details about this file, please refer to the WebTalk help file at /home/t-1000/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 30 08:42:50 2018...

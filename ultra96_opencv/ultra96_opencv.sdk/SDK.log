@@ -1,0 +1,70 @@
+10:17:52 INFO  : Registering command handlers for SDK TCF services
+10:17:52 INFO  : Launching XSCT server: xsct -n -interactive /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/temp_xsdb_launch_script.tcl
+10:17:54 INFO  : XSCT server has started successfully.
+10:17:54 INFO  : Successfully done setting XSCT server connection channel  
+10:17:55 INFO  : Successfully done setting SDK workspace  
+10:17:55 INFO  : Processing command line option -hwspec /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper.hdf.
+10:18:54 INFO  : Refreshed build settings on project hw
+10:20:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+10:20:20 INFO  : FPGA configured successfully with bitstream "/home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:20:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:30 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+10:20:30 INFO  : 'jtag frequency' command is executed.
+10:20:30 INFO  : Sourcing of '/home/t-1000/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:20:30 INFO  : Context for 'APU' is selected.
+10:20:30 INFO  : Hardware design information is loaded from '/home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:20:30 INFO  : 'configparams force-mem-access 1' command is executed.
+10:20:30 INFO  : Context for 'APU' is selected.
+10:20:30 INFO  : Sourcing of '/home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:20:31 INFO  : 'psu_init' command is executed.
+10:20:32 INFO  : 'after 1000' command is executed.
+10:20:32 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:20:33 INFO  : 'after 1000' command is executed.
+10:20:33 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:20:33 INFO  : 'catch {psu_protection}' command is executed.
+10:20:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:20:33 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+10:20:34 INFO  : The application '/home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/Xcv_hw_test/Debug/Xcv_hw_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:20:34 INFO  : 'configparams force-mem-access 0' command is executed.
+10:20:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/t-1000/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/Xcv_hw_test/Debug/Xcv_hw_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:20:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:20:34 INFO  : 'con' command is executed.
+10:20:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+10:20:34 INFO  : Launch script is exported to file '/home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_xcv_hw_test.elf_on_local.tcl'
+10:48:40 INFO  : Disconnected from the channel tcfchan#1.
+09:17:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1541175336000,  Project:1540919411000
+09:17:36 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+09:17:54 INFO  : Copied contents of /home/t-1000/workspace/xilinx/ultra96_opencv/ultra96_opencv.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+09:18:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:18:10 INFO  : 
+09:18:10 INFO  : Updating hardware inferred compiler options for Xcv_hw_test.
+09:18:10 INFO  : Clearing existing target manager status.
+09:18:10 INFO  : Closing and re-opening the MSS file of ther project hw_bsp
+09:18:27 INFO  : Closing and re-opening the MSS file of ther project hw_bsp
+09:18:27 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:18:43 WARN  : Linker script will not be updated automatically. Users need to update it manually.

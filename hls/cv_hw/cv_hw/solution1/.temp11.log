@@ -1,0 +1,6 @@
+480 x 640 x 3
+Calling cv_hw
+Returned from cv_hw
+WARNING: Hls::stream 'hls::stream<ap_axiu<32, 1, 1, 1> >.2' is read while empty, which may result in RTL simulation hanging.
+ RX Cnt 307201
+WARNING: Hls::stream 'hls::stream<ap_axiu<32, 1, 1, 1> >.3' contains leftover data, which may result in RTL simulation hanging.
